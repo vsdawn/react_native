@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'AwesomeProject' do
-  # Pods for AwesomeProject
+target 'Nativeproj1' do
+  # Pods for Nativeproj1
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -27,7 +27,11 @@ target 'AwesomeProject' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'AwesomeProjectTests' do
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  target 'Nativeproj1Tests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -35,10 +39,10 @@ target 'AwesomeProject' do
   use_native_modules!
 end
 
-target 'AwesomeProject-tvOS' do
-  # Pods for AwesomeProject-tvOS
+target 'Nativeproj1-tvOS' do
+  # Pods for Nativeproj1-tvOS
 
-  target 'AwesomeProject-tvOSTests' do
+  target 'Nativeproj1-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
